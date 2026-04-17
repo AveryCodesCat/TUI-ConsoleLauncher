@@ -1,12 +1,23 @@
-# T-UI Linux CLI Launcher
+# T-UI Linux CLI Launcher (Modernized Fork)
 
-Updated for compatibility with modern Android versions (API 34+) and enhanced with security hardening.
+Welcome to the modernized fork of the renowned T-UI Android Launcher. This fork revitalizes the project by bringing its entire Android build lifecycle up to modern development standards. It ensures that the application easily compiles on modern developer setups while maximizing compatibility with the newest Android platforms.
+
+## 🚀 Fork Changes & Modernization
+
+This fork specifically introduces the following crucial infrastructure updates to keep the project alive and developer-friendly:
+
+*   **Migrated to Kotlin DSL:** Completely replaced legacy Groovy build scripts with modern, type-safe Kotlin DSL (`.gradle.kts`).
+*   **Java 17 Readiness:** Upgraded the source compilation config to Java 17.
+*   **Android 15 Compatibility:** Bumped both `compileSdk` and `targetSdk` to **API 35 (Android 15)**.
+*   **Gradle & Tools:** Upgraded to **Gradle 8.9** and **Android Gradle Plugin 8.5.0**.
+*   **Developer-Friendly Keystores:** Restructured signing config so anyone can successfully run `assembleDebug` without requiring the original author's private signature.
+*   **AndroidX:** Fully uses AndroidX libraries.
 
 ---
 
-## 🚀 Recent Changes & Modernization
+## 🌟 Original Core Features
 
-These updates ensure the launcher remains functional, secure, and performant on modern Android devices (Android 11 through Android 14+).
+The classic launcher functionality remains fully intact, secure, and performant on Android 11 through Android 15+:
 
 > **Pro Tip:** On the very first install, if background transparency does not take effect immediately, simply type \`restart\` in the terminal and press enter.
 
@@ -35,15 +46,6 @@ To enable a full Linux environment, you can install BusyBox directly from the la
 4.  To remove it at any time, use `bbman -remove`.
 
 **Security Note:** Binaries are sourced from the trusted EXALAB repository and are verified against hardcoded SHA-256 hashes to ensure they have not been tampered with.
-
----
-
-## 🛠 Modern Build System
-*   **Target SDK:** Updated to **API 34 (Android 14)**.
-*   **Min SDK:** API 21 (Android 5.0).
-*   **AndroidX Migration:** Fully migrated from legacy Support Libraries to **AndroidX**.
-*   **Gradle & AGP:** Updated to Gradle 8.2 and Android Gradle Plugin 8.2.0.
-*   **Java Compatibility:** Built with **Java 17** support.
 
 ---
 
